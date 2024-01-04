@@ -8,6 +8,7 @@ import { ProductComponent } from './product/product.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { HeaderComponent } from './header/header.component';
 import { AppDropdownDirective } from './shared/app.dropdown.directive';
+import { ProductDetailComponent } from './product/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AppDropdownDirective } from './shared/app.dropdown.directive';
     ProductComponent,
     ProductListComponent,
     HeaderComponent,
-    AppDropdownDirective
+    AppDropdownDirective,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
