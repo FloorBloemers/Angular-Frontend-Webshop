@@ -9,6 +9,8 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { HeaderComponent } from './header/header.component';
 import { AppDropdownDirective } from './shared/app.dropdown.directive';
 import { ProductDetailComponent } from './product/product-detail/product-detail.component';
+import { ProductEditComponent } from './product-list/product-edit/product-edit.component';
+import { ShoppingEditComponent } from './product-list/shopping-edit/shopping-edit.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ProductDetailComponent } from './product/product-detail/product-detail.
     ProductListComponent,
     HeaderComponent,
     AppDropdownDirective,
-    ProductDetailComponent
+    ProductDetailComponent,
+    ProductEditComponent,
+    ShoppingEditComponent
   ],
   imports: [
     BrowserModule,
