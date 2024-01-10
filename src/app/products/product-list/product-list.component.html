@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success">New Product</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <app-product *ngFor="let productItem of products" [product]="productItem" (productSelected)="onProductSelected(productItem)"></app-product>
+  </div>
+</div>
+

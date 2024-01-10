@@ -1,7 +1,8 @@
-<app-header></app-header>
-<div class="col-xs-5">
-  <app-product-list></app-product-list>
-</div>
-<div class="col-xs-7">
-  <app-cart></app-cart>
+<app-header (featureSelected)="onNavigate($event)"></app-header>
+<div class="col-xs-12">
+  <app-products *ngIf="loadedFeature === 'product'"></app-products>
+  <app-cart *ngIf="loadedFeature === 'cart'"></app-cart>
+  <div class="row" *ngIf="loadedFeature === 'admin'">
+    <div class="col-xs-12"></div>
+  </div>
 </div>
